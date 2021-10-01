@@ -5,10 +5,36 @@
     <meta charset="utf-8">
     <title>дом наркомфина</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="author" content="аааа">
+    <meta name="description" content="бббб">
+    <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+	$('.sidebar a').each(function() {
+		$(this).on('click', function(e) {
+			e.preventDefault();
+			var scrollTo = $(this).attr('href');
+			var whitespace = scrollTo == '#s1' ? 70 : 30;
+			$('html,body').animate({
+				scrollTop: $(scrollTo).offset().top - whitespace
+			}, 1000);
+		});
+	});
+});
+
+    </script>
   </head>
 
   <body>
-    <nav>
+    <div class="menubar">
+      <a href=""><img src="images/logo.svg" alt=""></a>
+      <a href=""> О проекте
+
+      </a>
+    </div>
+    <nav class="sidebar">
       <p>Содержание</p>
       <ul>
         <li><a href="#s1">История создания дома Наркомфина</a></li>
