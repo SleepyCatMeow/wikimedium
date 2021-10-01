@@ -44,12 +44,12 @@ article blockquote { font-style: italic;
     left: -20px;
   }
 
-img { display: block; width: 1020px; margin: 79px auto 0;
+article img { display: block; width: 1020px; margin: 79px auto 0;
 }
-img + h2 { margin-top: 79px;
+article img + h2 { margin-top: 79px;
 }
-img + p,
-img + blockquote,
+article img + p,
+article img + blockquote,
 
 h2 + img { margin-top: 82px;
 }
