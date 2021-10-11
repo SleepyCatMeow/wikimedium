@@ -1,8 +1,8 @@
 nav {
 
-  width: 399px;
+  width: 300px;
   position: fixed;
-  top: 20px;
+  top: 90px;
   left:20px;
   padding: 30px;
   box-sizing: border-box;
@@ -25,10 +25,23 @@ nav ul {
   list-style-type: none;
 }
 nav li {
-  margin: 10px 0;
+  margin: 10px;
+  font-size: 16px;
+  color: #121212;
   line-height: 20px;
 
 }
+nav > ul > li:first-of-type {
+  margin: 0;
+  font-weight: bold;
+  line-height: 14px;
+
+}
+nav ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
 nav ul > ul {
   margin-left: 10px;
   color: #777;
